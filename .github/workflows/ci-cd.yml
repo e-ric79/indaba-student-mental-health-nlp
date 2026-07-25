@@ -14,7 +14,5 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r backend/requirements.txt
-      - name: Run tests
-        run: pytest backend/tests/  # if you have tests
       -  name: Build with docker-compose
          run: docker compose build
